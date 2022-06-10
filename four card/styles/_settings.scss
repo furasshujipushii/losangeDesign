@@ -1,0 +1,90 @@
+$Red: hsl(0, 78%, 62%) ;
+$Cyan: hsl(180, 62%, 55%) ;
+$Orange: hsl(34, 97%, 64%) ;
+$Blue: hsl(212, 86%, 64%);
+$VerDarBlue: hsl(234, 12%, 34%) ;
+$GrayisBlue: hsl(229, 6%, 66%) ;
+$VerLighGray: hsl(0, 0%, 98%);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-color: $VerLighGray;
+}
+header {
+    height: 30%;
+    text-align: center;
+    width: 40%;
+    margin: 40px auto 20px auto;
+}
+header h1 {
+    font-weight: 200;
+    font-size: 1.9em;
+    color: $VerDarBlue;
+}
+header h2 {
+    font-weight: 600;
+    font-size: 1.9em;
+    color: $VerDarBlue;
+}
+header p {
+    font-size: 15px;
+    font-weight: 200;
+    color: $GrayisBlue;
+    width: 80%;
+    margin: 15px auto 0 auto;
+}
+.card { 
+    padding: 25px;
+    width: 280px;
+    height: 200px;
+    position: absolute;
+    border-radius: 3px;
+    background-color: white;
+    box-shadow: 0px 6px 20px 3px rgba(0, 0, 0, 0.201);
+        -webkit-box-shadow: 0px 6px 20px 3px rgba(0, 0, 0, 0.171);
+        -moz-box-shadow: 0px 6px 20px 3px rgba(0, 0, 0, 0.201);
+}
+.left {
+    left: 18%;
+    transform: translateY(45%);
+    border-top: 3px solid $Cyan;
+}
+.top {
+    top: 28%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top: 3px solid $Red;
+}
+.right {
+    right: 18%;
+    transform: translateY(45%);
+    border-top: 3px solid $Blue;
+}
+.bot {
+    bottom: 13%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top: 3px solid $Orange;
+}
+.card p {
+    padding-top: 5px;
+    font-weight: 200;
+    color: $GrayisBlue;
+    font-size: 15px;
+}
+.card img {
+    position: absolute;
+    right: 10%;
+}
+.card h3 {
+    color: $VerDarBlue;
+}
